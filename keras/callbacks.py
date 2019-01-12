@@ -154,6 +154,9 @@ class Callback(object):
         model: instance of `keras.models.Model`.
             Reference of the model being trained.
 
+    The 'epoch' and 'batch' values that callback methods take as arguments are
+    the epoch index and batch index, respectively. The batch index resets every epoch.
+
     The `logs` dictionary that callback methods
     take as argument will contain keys for quantities relevant to
     the current batch or epoch.
